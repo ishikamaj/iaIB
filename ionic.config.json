@@ -1,5 +1,7 @@
 {
   "name": "iaIB",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

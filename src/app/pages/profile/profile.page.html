@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/logo.png" style="width:40%">    
+  <ion-row>
+    <ion-col>
+      <ion-title>First Name: </ion-title>
+    </ion-col>
+    <ion-col>
+      <ion-input type="text" placeholder="First Name" [(ngModel)]="myVal"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-title>Last Name: </ion-title>
+    </ion-col>
+    <ion-col>
+      <ion-input type="text" placeholder="Last Name" [(ngModel)]="myValue"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-label color="dark">{{myVal1}}</ion-label>
+  <ion-label color="dark">{{myVal2}}</ion-label>
+  <button type="button" ion-button large full color="dark" (click)="save()">Save</button>
+
+  <br>
+  <ion-item>
+    <ion-label>Status:</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="p">Parent</ion-select-option>
+      <ion-select-option value="v">Volunteer</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox>
+      <ion-title>I agree to the terms and conditions of the Liability Release Form</ion-title>
+    </ion-checkbox>
+  <button ion-button full (click)="openReleasePDF()">Liability Form</button>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox>
+      <ion-title>I agree to the terms and conditions of the Liability Release Form</ion-title>
+    </ion-checkbox>
+  <button ion-button full (click)="openPhotoVideoPDF()">Photo/Video Form</button>
+</ion-item>
+<br>
+<button type="long-button" style="width: 200px" ion-button full (click)="downloadLiability()">Download Liability Form</button>
+</ion-content>
+
+  

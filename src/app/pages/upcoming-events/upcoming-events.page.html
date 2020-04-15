@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Upcoming Events</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="black"> Learning About Hackathons</ion-card-title>
+      <ion-card-subtitle>Date: Feb 29, 2020</ion-card-subtitle>
+      <ion-card-subtitle>Time: 10:00am to 12:00pm</ion-card-subtitle>
+      <ion-card-subtitle>Location: Ohio State University</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      The workshop aims to enable students in grades 8-12 to learn more about Hackathons and how to prepare for them. 
+      Activities include introduction to GitHub, learning about different softwares, and interactive programming. 
+      (Hosted by Ohio State’s Association of Computing Machinery Women's Chapter (ACM-W)). 
+
+      The mission of ACM-W is to engage students in activities that improve the working and learning environments for women in technology. 
+      This is accomplished by mentoring, volunteering, teaching others, and encouraging other women to get involved in CS.
+    </ion-card-content>
+    <ion-button (click)="openModal()" type="button" fill="clear">Sign Up</ion-button> 
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="black"> There are no other upcoming events.</ion-card-title>
+      <ion-card-subtitle>Come back later!</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

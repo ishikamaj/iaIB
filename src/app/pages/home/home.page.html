@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="white">Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-title size="large"><b>Get Involved</b></ion-title>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="black"> Parents</ion-card-title>
+      <ion-card-subtitle>We are here to help you, too. Beyond encouraging your daughter, 
+        we want to help you understand the need for women in STEM jobs, and help you help your daughter 
+        make informed decisions about where she wants to go in her career. </ion-card-subtitle>
+      <ion-card-subtitle>Sign Up to receive updates from CTG!</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" type="button" href="https://cooltechgirls.org/sign-up-form/"> Sign Up </ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="black"> Volunteers</ion-card-title>
+      <ion-card-subtitle>CoolTechGirls is a volunteer-run group. 
+        It takes passionate people with a desire to contribute to create change in the world. 
+        Come and help us change the future for these girls! From web promotion to newsletters or being a mentor, 
+        there is a place here for you to contribute in a meaningful way. </ion-card-subtitle>
+      <ion-card-subtitle>Check out our current volunteers and sign up to be one!</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" type="button" href="https://cooltechgirls.org/team/"> Volunteers </ion-button>
+    <ion-button (click)="openModal()" type="button" fill="clear">Sign Up</ion-button> 
+  </ion-card>
+
+  <ion-title size="large"><b>Upcoming Events</b></ion-title>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="black"> Learning About Hackathons</ion-card-title>
+      <ion-card-subtitle>Date: Feb 29, 2020</ion-card-subtitle>
+      <ion-card-subtitle>Time: 10:00am to 12:00pm</ion-card-subtitle>
+      <ion-card-subtitle>Location: Ohio State University</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      The workshop aims to enable students in grades 8-12 to learn more about Hackathons and how to prepare for them. 
+      Activities include introduction to GitHub, learning about different softwares, and interactive programming. 
+
+    </ion-card-content>
+    <ion-button fill="clear" type="button" href="/upcoming-events"> Read More </ion-button>
+  </ion-card>
+
+  <ion-title size="large"><b>Opportunities</b></ion-title>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="black"> There are no current opportunities in Columbus right now.</ion-card-title>
+      <ion-card-subtitle>Come back later!</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

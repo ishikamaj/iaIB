@@ -1,0 +1,217 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title (click) ="showEvents()" >Past Events</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Card 0 CTG Scratch Event -->
+  <div *ngIf="{cardNum: 0} as variable">
+  <ion-card>
+    <ion-card-content>
+      <ion-row> <!--First Row-->
+        <ion-col size="8" size-lg> <!--First columnn in First Row and wider than second column-->
+          <ion-card-title> {{events[variable.cardNum][0]}}</ion-card-title>
+          <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="3" size-lg> <!--Second columnn in First Row and smaller than second column-->
+          <img src="assets/scratch.jpg" style="height: 50px;width: 50px;" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" size-lg> <!--First columnn in Second Row and smaller than second column-->
+          <img src="assets/osu.jpg" style="height: 50px;width: 50px;" />
+        </ion-col>
+        <ion-col size="7" size-lg> <!--Second columnn in Second Row and wider than second column-->
+          <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+          <ion-card-subtitle>Time: {{events[variable.cardNum][3]}}</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-card-content>
+        {{events[variable.cardNum][4]}}
+      </ion-card-content>
+    </ion-card-content>
+  </ion-card>
+  </div>
+  <!-- Card 1 Technofashion -->
+  <div *ngIf="{cardNum: 1} as variable">
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8" size-lg>
+          <ion-card-title>{{events[variable.cardNum][0]}}</ion-card-title>
+          <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="3" size-lg>
+          <img src="assets/technofashion.jpg" style="height: 50px;width: 100px;" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" size-lg>
+          <img src="assets/osu.jpg" style="height: 50px;width: 50px;" />
+        </ion-col>
+        <ion-col size="7" size-lg>
+          <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+          <ion-card-subtitle>Time: {{events[variable.cardNum][3]}} </ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-card-content>
+        {{events[variable.cardNum][4]}}
+      </ion-card-content>
+    </ion-card-content>
+  </ion-card>
+  </div> 
+
+  <!-- Card 2 SPARK the IMAGINATION -->
+  <div *ngIf="{cardNum: 2} as variable">
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="8" size-lg>
+          <ion-card-title>{{events[variable.cardNum][0]}}</ion-card-title>
+          <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="3" size-lg>
+          <img src="assets/technofashion.jpg" style="height: 50px;width: 100px;" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" size-lg>
+          <img src="assets/osu.jpg" style="height: 50px;width: 50px;" />
+        </ion-col>
+        <ion-col size="7" size-lg>
+          <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+          <ion-card-subtitle>Time: {{events[variable.cardNum][3]}}</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-card-content>
+        {{events[variable.cardNum][4]}}
+      </ion-card-content>
+    </ion-card-content>
+  </ion-card>
+  </div> 
+
+  <!-- Card 3 App Dev Fuse -->
+  <div *ngIf="{cardNum: 3} as variable">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="8" size-lg>
+            <ion-card-title>{{events[variable.cardNum][0]}}</ion-card-title>
+            <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="3" size-lg>
+            <img src="assets/app-dev.png" style="height: 50px;width: 100px;" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="4" size-lg>
+            <img src="assets/fuse.png" style="height: 50px;width: 50px;" />
+          </ion-col>
+          <ion-col size="7" size-lg>
+            <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+            <ion-card-subtitle>Time: {{events[variable.cardNum][3]}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-card-content>
+          {{events[variable.cardNum][4]}}
+        </ion-card-content>
+      </ion-card-content>
+    </ion-card>
+    </div> 
+
+  <!-- Card 4 Data Science Cardinal -->
+  <div *ngIf="{cardNum: 4} as variable">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="8" size-lg>
+            <ion-card-title>{{events[variable.cardNum][0]}}</ion-card-title>
+            <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="3" size-lg>
+            <img src="assets/data-science.jpg" style="height: 50px;width: 100px;" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="4" size-lg>
+            <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFxFfXZSrsubw/company-logo_200_200/0?e=2159024400&v=beta&t=hOQ4xp7b95kkFa59pcS8apuS0NA3iVZM5V5udESdSXQ" style="height: 50px;width: 50px;" />
+          </ion-col>
+          <ion-col size="7" size-lg>
+            <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+            <ion-card-subtitle>Time: {{events[variable.cardNum][3]}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-card-content>
+          {{events[variable.cardNum][4]}}
+        </ion-card-content>
+      </ion-card-content>
+    </ion-card>
+    </div> 
+
+    <!-- Card 5 Ohbot -->
+  <div *ngIf="{cardNum: 5} as variable">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="8" size-lg>
+            <ion-card-title>{{events[variable.cardNum][0]}}</ion-card-title>
+            <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="3" size-lg>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/416xEAk0P8L._AC_.jpg" style="height: 50px;width: 100px;" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="4" size-lg>
+            <img src="assets/microsoft.png" style="height: 50px;width: 50px;" />
+          </ion-col>
+          <ion-col size="7" size-lg>
+            <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+            <ion-card-subtitle>Time: {{events[variable.cardNum][3]}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-card-content>
+          {{events[variable.cardNum][4]}}
+        </ion-card-content>
+      </ion-card-content>
+    </ion-card>
+    </div> 
+
+</ion-content>
+    
+<!-- Layout of Card
+  <div *ngIf="{cardNum: #} as variable">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="8" size-lg>
+            <ion-card-title>{{events[variable.cardNum][0]}}</ion-card-title>
+            <ion-card-subtitle>{{events[variable.cardNum][1]}}</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="3" size-lg>
+            <img src="TOPIC.png" style="height: 50px;width: 100px;" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="4" size-lg>
+            <img src="LOCATION.jpg" style="height: 50px;width: 50px;" />
+          </ion-col>
+          <ion-col size="7" size-lg>
+            <ion-card-subtitle>Date: {{events[variable.cardNum][2]}}</ion-card-subtitle>
+            <ion-card-subtitle>Time: {{events[variable.cardNum][3]}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-card-content>
+          {{events[variable.cardNum][4]}}
+        </ion-card-content>
+      </ion-card-content>
+    </ion-card>
+    </div> 
+-->
+

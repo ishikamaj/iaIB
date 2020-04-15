@@ -1,0 +1,32 @@
+ion-title {
+    font-family: 'Georgia', serif;
+    padding-top: 16px;
+}
+.container {
+    font-size: 16px;
+    line-height: 16px;
+    height: 32px;
+    overflow: hidden;
+}
+.show {
+    overflow: visible;
+    height: auto;
+}
+ion-card-title {
+    font-family: 'Georgia', serif;
+    color: #c8548f;
+}
+ion-card-subtitle {
+    font-family: 'Georgia', serif;
+    color: #000000;
+}
+ion-card-content {
+    font-family: 'Bitter', serif;
+}
+#more {
+    display: none;
+}
+
+button {
+    fill: "clear"
+}

@@ -1,0 +1,37 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d472a4;
+    border-radius:15px;
+    width: 120px;
+    height: 30px;
+}
+
+ion-select {
+    color: #000000;
+}
+
+ion-checkbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+        border-width: 1px;
+        border-style: solid ;
+        border-radius: 4px;
+        border-color : #b41c64 ;
+        --height : 25px;
+        --width: 25px;
+        --checkmark-color:#b41c64;
+        --background-checked: #FFFFFF;
+        --border-color: #FFFFFF;
+        --border-color-checked :#FFFFFF;
+}
